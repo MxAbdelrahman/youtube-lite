@@ -1,0 +1,661 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto","Arial",sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 16px;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+}
+.left {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+header .left img{
+    width: 46%;
+    padding-left: 16px;
+}
+.left i {
+    padding: 5px;
+}
+.left i:hover{
+background-color: #eee;
+border-radius: 50%;
+padding: 5px;
+}
+.right .notifications {
+    padding: 5px;
+}
+ .right .notifications:hover{
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 50%;
+ }
+ .right .video {
+    padding: 5px;
+ }
+ .right .video:hover {
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 50%;
+ }
+.mid {
+    display: flex;
+    align-items: center;
+    margin-left: -9%;
+}
+.mid form{
+    height: 40px;
+    width: 500px;
+    position: relative;
+    flex: 1;
+    flex-basis: 0.000000001px;
+    display: flexbox;
+    display: flex;
+    flex-direction: row;
+    margin-left: -9%;
+}
+
+.mid form input{
+    width: 88%;
+    /* outline: 1px solid rgb(25, 25, 233); */
+    outline: none;
+    padding: 10px;
+    font-size: 1.6rem;
+    border-radius: 20px 0px 0px 20px ;
+    border: 1px solid  #d3d3d3;
+    border-right: none;
+}
+.mid form button {
+    width: 12%;
+    outline: none;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+    border: 1px solid  #d3d3d3;
+    background-color: #f8f8f8;
+    padding-top: 4px;
+}
+.mid form button:hover{
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
+.mid .mic {
+background-color: #f9f9f9;
+padding: 7px;
+border-radius: 50%;
+margin-left: 14px;
+}
+.mid .mic:hover {
+    background-color: #f0f0f0;
+    border-color: #c6c6c6;
+    cursor: pointer;
+}
+.mid .mic i{
+    background-color: black;
+}
+header .right {
+    display: flex;
+    align-items: center;
+}
+header .right a {
+color: black;
+padding: 0 10px;
+}
+header .right a .account{
+font-size: 35px;
+}
+
+main video{
+    width: 750px;
+    height: 421px;
+    margin: 100px 40px 30px 40px;
+    border-radius: 15px;
+}
+main .video h1{
+    margin-left: 42px;
+    margin-top: -20px;
+}
+main .center {
+    display: flex;
+    align-items: center;
+    width: 790px;
+    height: 120px;
+    /* background-color: blueviolet; */
+    margin-top: -15px;
+    padding: 0px 20px;
+}
+.center img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+.center p{
+    font-size: 20px;
+    padding: 10px 20px;
+    /* width: 200px; */
+    display: flex;
+    margin-top: -12px;
+}
+.center .p {
+    /* display: flex; */
+    width: 100px;
+    position: relative;
+    bottom: -15px;
+    right: 130px;
+    font-size: 11px;
+}
+.center .Subscribe{
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+    margin-right: -139px;
+    position: relative;
+    left: -80px;
+}
+.center .Subscribe:hover{
+    background-color: #131212;
+    cursor: pointer;
+}
+.center form {
+    margin-left: 200px;
+    display: flex;
+}
+.center form .doted{
+    padding: 6px;
+    background-color: #eee;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center form .doted:hover{
+    background-color: #dbd8d8;
+    cursor: pointer;
+}
+.center form .Share {
+    display: flex;
+    background-color: #eee;
+    width:90px;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    padding-left: 10px;
+    text-align: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.center form .Share:hover{
+    background-color: #dbd8d8;
+    cursor: pointer;
+}
+.center form .like{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 73px;
+height: 36px;
+border-radius: 20px 0 0 20px;
+border: none;
+outline: none;
+}
+.center form .like:hover{
+    background-color: #dbd8d8;
+    cursor: pointer;
+}
+.center form .like .M1{
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.center form .dis-like{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 73px;
+    height: 36px;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    outline: none;
+    border-left: 1px solid #dbdbdb;
+    }
+    .center form .dis-like:hover{
+        background-color: #dbd8d8;
+        cursor: pointer;
+    }   
+    .center .lik{
+        display: flex;
+        padding-right: 10px;
+    }
+    .sid {
+        display: block;
+        flex-direction: column;
+        height: 100vh;
+        /* background-color: red; */
+        width: 470px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 100px;
+    }
+   .sid .top {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 20px 20px 0;
+    }
+    .sid .top p{
+        font-size: 15px;
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: bold;
+    }
+    .sid .top p:hover{
+        background-color: #d4d4d4;
+        cursor: pointer;
+    }
+    /* =============================video1=============================================== */
+    .sid .vid1 {
+        display: flex;
+        height: 100px;
+        cursor: pointer;
+    }
+    .sid .vid1 img {
+        display: flex;
+        width: 170px;
+        height: 100px;
+        border-radius: 10px;
+        /* padding: 0 10px 5px 10px; */
+        object-fit:cover;
+        margin: 0px 10px 5px 23px;
+    }
+    .sid .vid1 p{
+        display: flex;
+        font-size: 12px;
+        width: 155px;
+        height: 27px;
+        overflow-y: hidden;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        letter-spacing: 1px;
+    }
+    .sid .vid1 .cap {
+        color: gray;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+    .sid .vid1 .cap img{
+        width: 15px;
+        height: 15px;
+        margin-left: 5px;
+    }
+    .sid .vid1 .cap .data {
+        margin-top: -7px;
+    }
+    .sid .vid1 .doted2{
+        padding: 10px;
+        background-color: inherit;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(90deg);
+        margin-right: 50px;
+    }
+    .sid .vid1 .doted2:hover{
+        background-color: #dbd8d8;
+        cursor: pointer;
+    }
+/* =============================video2=============================================== */
+.sid .vid2 {
+    display: flex;
+    height: 100px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.sid .vid2 img {
+    display: flex;
+    width: 170px;
+    height: 100px;
+    border-radius: 10px;
+    /* padding: 0 10px 5px 10px; */
+    object-fit:cover;
+    margin: 0px 10px 5px 23px;
+}
+.sid .vid2 p{
+    display: flex;
+    font-size: 12px;
+    width: 155px;
+    height: 27px;
+    overflow-y: hidden;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.sid .vid2 .cap {
+    color: gray;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.sid .vid2 .cap img{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+.sid .vid2 .cap .data {
+    margin-top: -7px;
+}
+.sid .vid2 .doted2{
+    padding: 10px;
+    background-color: inherit;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    margin-right: 50px;
+}
+.sid .vid2 .doted2:hover{
+    background-color: #dbd8d8;
+    cursor: pointer;
+}
+/* =============================video3=============================================== */
+.sid .vid3 {
+    display: flex;
+    height: 100px;
+    cursor: pointer;
+}
+.sid .vid3 img {
+    display: flex;
+    width: 170px;
+    height: 100px;
+    border-radius: 10px;
+    /* padding: 0 10px 5px 10px; */
+    object-fit:cover;
+    margin: 0px 10px 5px 23px;
+}
+.sid .vid3 p{
+    display: flex;
+    font-size: 12px;
+    width: 155px;
+    height: 27px;
+    overflow-y: hidden;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.sid .vid3 .cap {
+    color: gray;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.sid .vid3 .cap img{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+.sid .vid3 .cap .data {
+    margin-top: -7px;
+}
+.sid .vid3 .doted2{
+    padding: 10px;
+    background-color: inherit;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    margin-right: 50px;
+}
+.sid .vid3 .doted2:hover{
+    background-color: #dbd8d8;
+    cursor: pointer;
+}
+/* =============================video4=============================================== */
+.sid .vid4 {
+    display: flex;
+    height: 100px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.sid .vid4 img {
+    display: flex;
+    width: 170px;
+    height: 100px;
+    border-radius: 10px;
+    /* padding: 0 10px 5px 10px; */
+    object-fit:cover;
+    margin: 0px 10px 5px 23px;
+}
+.sid .vid4 p{
+    display: flex;
+    font-size: 12px;
+    width: 155px;
+    height: 27px;
+    overflow-y: hidden;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.sid .vid4 .cap {
+    color: gray;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.sid .vid4 .cap img{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+.sid .vid4 .cap .data {
+    margin-top: -7px;
+}
+.sid .vid4 .doted2{
+    padding: 10px;
+    background-color: inherit;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    margin-right: 50px;
+}
+.sid .vid4 .doted2:hover{
+    background-color: #dbd8d8;
+    cursor: pointer;
+}
+/* =============================video5=============================================== */
+.sid .vid5 {
+    display: flex;
+    height: 100px;
+    cursor: pointer;
+}
+.sid .vid5 img {
+    display: flex;
+    width: 170px;
+    height: 100px;
+    border-radius: 10px;
+    /* padding: 0 10px 5px 10px; */
+    object-fit:cover;
+    margin: 0px 10px 5px 23px;
+}
+.sid .vid5 p{
+    display: flex;
+    font-size: 12px;
+    width: 155px;
+    height: 27px;
+    overflow-y: hidden;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.sid .vid5 .cap {
+    color: gray;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.sid .vid5 .cap img{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+.sid .vid5 .cap .data {
+    margin-top: -7px;
+}
+.sid .vid5 .doted2{
+    padding: 10px;
+    background-color: inherit;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    margin-right: 50px;
+}
+.sid .vid5 .doted2:hover{
+    background-color: #dbd8d8;
+    cursor: pointer;
+}
+/* =============================video6=============================================== */
+.sid .vid6 {
+    display: flex;
+    height: 100px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.sid .vid6 img {
+    display: flex;
+    width: 170px;
+    height: 100px;
+    border-radius: 10px;
+    /* padding: 0 10px 5px 10px; */
+    object-fit:cover;
+    margin: 0px 10px 5px 23px;
+}
+.sid .vid6 p{
+    display: flex;
+    font-size: 12px;
+    width: 155px;
+    height: 27px;
+    overflow-y: hidden;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.sid .vid6 .cap {
+    color: gray;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.sid .vid6 .cap img{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+.sid .vid6 .cap .data {
+    margin-top: -7px;
+}
+.sid .vid6 .doted2{
+    padding: 10px;
+    background-color: inherit;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    margin-right: 50px;
+}
+.sid .vid6 .doted2:hover{
+    background-color: #dbd8d8;
+    cursor: pointer;
+}
+/* =============================video7=============================================== */
+.sid .vid7 {
+    display: flex;
+    height: 100px;
+    cursor: pointer;
+}
+.sid .vid7 img {
+    display: flex;
+    width: 170px;
+    height: 100px;
+    border-radius: 10px;
+    /* padding: 0 10px 5px 10px; */
+    object-fit:cover;
+    margin: 0px 10px 5px 23px;
+}
+.sid .vid7 p{
+    display: flex;
+    font-size: 12px;
+    width: 155px;
+    height: 27px;
+    overflow-y: hidden;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.sid .vid7 .cap {
+    color: gray;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.sid .vid7 .cap img{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+.sid .vid7 .cap .data {
+    margin-top: -7px;
+}
+.sid .vid7 .doted2{
+    padding: 10px;
+    background-color: inherit;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    margin-right: 50px;
+}
+.sid .vid7 .doted2:hover{
+    background-color: #dbd8d8;
+    cursor: pointer;
+}
